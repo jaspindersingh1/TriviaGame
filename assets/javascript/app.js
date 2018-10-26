@@ -1,8 +1,8 @@
 // NBA TRIVIA GAME!!!
 
 $("#stBut").on("click", function(){
-    game.loadQuestions();
-    console.log(game.loadQuestions())
+    loadQuestions();
+
 });
 
 
@@ -60,12 +60,12 @@ var questions = [
 
 ];
 
-var game = {
-    questions: questions,
 
-    loadQuestions: function() {
-        for (var i = 0; i < questions.length; i++) {
-        $("#gameQuest").html(questions[i].question)
+    function loadQuestions() {
+        for (var i in questions) {
+            var quest = questions[i].question + "<br>" + questions[i].answerChoice
+            $("#gameQuest").html(quest)
+            console.log(quest)
+            
         }
     }
-}
