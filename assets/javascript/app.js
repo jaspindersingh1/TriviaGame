@@ -63,9 +63,11 @@ var questions = [
 
     function loadQuestions() {
         for (var i in questions) {
-            var quest = questions[i].question + "<br>" + questions[i].answerChoice
-            $("#gameQuest").html(quest)
-            console.log(quest)
+            var quest = questions[i].question + "<br>";
+            $("#gameQuest").append(quest);
+            var ans = questions[i].answerChoice + "<br>" + "<br>";            
+            $("#gameAns").append(ans + '<input type="radio" name="radio_name" id="q00" />');
+            // console.log(quest)
             
         }
     }

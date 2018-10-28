@@ -43,7 +43,7 @@ body {
     transform: translate(-50%);
 }
 
-#stBut {
+#stBut, #subBut {
     background-color: tomato;
     width: 90px;
     height: 50px;
@@ -58,11 +58,14 @@ body {
     /* background: rgba(hue, saturation, lightness, opacity) */
     background: rgba(204, 204, 204, 0.5);
     width: 600px;
-    height: 400px;
+    height: auto;
     top: 24.5%;
     left: 50%;
     transform: translate(-50%);
     position: absolute;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
 }
 
 span {
